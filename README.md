@@ -11,7 +11,7 @@ To ease the implementation, all the initial CSAT nodes created are kept in an ar
 
 The functions for solving De Morgan's laws are collectively grouped into a function for simplifying the current tree. Considering that the simplification function is recursive, in order to increase the efficiency of the program, it is applied as soon as a new gate has been introduced into the circuit, and it is applied only to the respective subtree.
 
-At the end, there is a *, namely, if the main gate of the initial tree is OR, then after applying the reduction, the tree will end up in DNF form, to solve this problem lightly, an AND gate is created that has only the OR gate as input and the distribution is applied once more on this AND gate.
+At the end, there is an asterix, namely, if the main gate of the initial tree is OR, then after applying the reduction, the tree will end up in DNF form, to solve this problem lightly, an AND gate is created that has only the OR gate as input and the distribution is applied once more on this AND gate.
 
 # USAGE
 
